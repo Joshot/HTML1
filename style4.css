@@ -1,0 +1,131 @@
+body#testi h1{
+    text-align: right;
+    color: rgb(37, 51, 133);
+}
+body{
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: arial;
+}
+
+
+#testi ul{
+    margin: 0;
+    padding: 0;
+}
+
+#testi ul li{
+    text-align: right;
+    list-style: none;
+    padding: 0;
+    display: contents;
+    margin-left: 10px;
+}
+
+#testi ul li a:hover{
+    border-bottom: 4px solid;
+}
+
+#testi .active{
+    border-bottom: 6px solid;
+}
+
+
+#testi{
+    margin-top: 50px;
+}
+
+#testi ul li a{
+    color:rgb(67, 159, 202);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.review {
+    border: 2px solid rgb(204, 204, 204);
+    background-color: rgb(253, 252, 252);
+    border-radius: 5px;
+    padding: 16px;
+    margin: 16px 0
+}
+    
+.review::after {
+    content: "";
+    sclear: both;
+    display: table;
+}
+    
+.review img {
+    float: left
+}
+    
+.review span {
+    
+}
+
+<style>
+body { font-family: Arial;
+}
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  margin: 35px 0;
+}
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slides p{
+    font-size: 10px;
+}
+
+.slides span{
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.slides img{
+    float: left; 
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.slides::-webkit-scrollbar{
+    width: 5px; height: 10px; 
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: #ccc; border-radius: 5px; 
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 600px;
+  height: 130px;
+  margin: 0 10px 0 10px;
+  border-radius: 7px;
+  background: #fff;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  border: 1px solid #555;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-size: 100%;
+}
+</style>
